@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/INF554Fall18/project-bacdata/precache-manifest.b5b72316efc609774ed4df6cad9e70bb.js"
+  "/bacdata-web/precache-manifest.6a4aa469f41b641fc2360b0895141f85.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/INF554Fall18/project-bacdata/index.html", {
+workbox.routing.registerNavigationRoute("/bacdata-web/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
