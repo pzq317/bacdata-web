@@ -2,7 +2,7 @@
   "name": "inf554-bacdata",
   "version": "0.1.0",
   "private": true,
-  "homepage":"https://pzq317.github.com/bacdata-web/",
+  "homepage":"https://pzq317.github.io/bacdata-web/",
   "dependencies": {
     "bootstrap": "^4.1.3",
     "d3": "^5.7.0",

@@ -31,7 +31,9 @@ export default class Title extends Component {
                 <a href="">Report link</a>
                 <br></br>
                 <br></br>
-                <p>source: https://www.vox.com/2018/10/9/17955106/imf-economy-trump-trade-war-growth<br></br>https://www.bbc.com/news/world-43512098</p>
+                <a href="https://www.vox.com/2018/10/9/17955106/imf-economy-trump-trade-war-growth">Data source 1</a>
+                <br></br>
+                <a href="https://www.bbc.com/news/world-43512098">Data source 2</a>
             </div>
         )
     }
