@@ -1,0 +1,28 @@
+{
+	"nodes":
+	[
+		{"name":"Germany0"},
+		{"name":"Poland1"},
+		{"name":"Belgium2"},
+		{"name":"Italy3"},
+		{"name":"Canada4"},
+		{"name":"Japan5"},
+		{"name":"United State6"},
+		{"name":"China7"}
+	],
+	"links":
+	[
+		{"source":0,"target":6,"value":124.729},
+		{"source":0,"target":7,"value":89.597},
+		{"source":1,"target":6,"value":26.862},
+		{"source":1,"target":7,"value":280.322},
+		{"source":2,"target":6,"value":59},
+		{"source":2,"target":7,"value":90},
+		{"source":3,"target":6,"value":85},
+		{"source":3,"target":7,"value":100},
+		{"source":4,"target":6,"value":190},
+		{"source":4,"target":7,"value":167},
+		{"source":5,"target":6,"value":100},
+		{"source":5,"target":7,"value":123}
+	]
+}
