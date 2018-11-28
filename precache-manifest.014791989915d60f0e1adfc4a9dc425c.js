@@ -16,15 +16,15 @@ self.__precacheManifest = [
     "url": "/bacdata-web/static/js/runtime~main.4d25c403.js"
   },
   {
-    "revision": "d884453480bb59dc1c95",
-    "url": "/bacdata-web/static/js/main.d8844534.chunk.js"
+    "revision": "8477941763fe83f253ef",
+    "url": "/bacdata-web/static/js/main.84779417.chunk.js"
   },
   {
     "revision": "46c59d932d958a697856",
     "url": "/bacdata-web/static/js/1.46c59d93.chunk.js"
   },
   {
-    "revision": "d884453480bb59dc1c95",
+    "revision": "8477941763fe83f253ef",
     "url": "/bacdata-web/static/css/main.fda22ae6.chunk.css"
   },
   {
@@ -32,7 +32,7 @@ self.__precacheManifest = [
     "url": "/bacdata-web/static/css/1.76cdabf9.chunk.css"
   },
   {
-    "revision": "c53288a69041b046c6d4ba9856150013",
+    "revision": "fa1e295c150a2aa112cf9a3b90bad260",
     "url": "/bacdata-web/index.html"
   }
 ];
