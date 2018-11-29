@@ -1,7 +1,7 @@
 {
   "main.css": "/bacdata-web/static/css/main.fda22ae6.chunk.css",
-  "main.js": "/bacdata-web/static/js/main.6460df20.chunk.js",
-  "main.js.map": "/bacdata-web/static/js/main.6460df20.chunk.js.map",
+  "main.js": "/bacdata-web/static/js/main.d19815f0.chunk.js",
+  "main.js.map": "/bacdata-web/static/js/main.d19815f0.chunk.js.map",
   "static/css/1.76cdabf9.chunk.css": "/bacdata-web/static/css/1.76cdabf9.chunk.css",
   "static/js/1.46c59d93.chunk.js": "/bacdata-web/static/js/1.46c59d93.chunk.js",
   "static/js/1.46c59d93.chunk.js.map": "/bacdata-web/static/js/1.46c59d93.chunk.js.map",
@@ -13,6 +13,6 @@
   "static/media/category.csv": "/bacdata-web/static/media/category.baf775fb.csv",
   "static/css/1.76cdabf9.chunk.css.map": "/bacdata-web/static/css/1.76cdabf9.chunk.css.map",
   "index.html": "/bacdata-web/index.html",
-  "precache-manifest.d0a0eadda0b3269fd0e11f4274ebfab9.js": "/bacdata-web/precache-manifest.d0a0eadda0b3269fd0e11f4274ebfab9.js",
+  "precache-manifest.97ce1686456177e47e326359a47ccb77.js": "/bacdata-web/precache-manifest.97ce1686456177e47e326359a47ccb77.js",
   "service-worker.js": "/bacdata-web/service-worker.js"
 }
