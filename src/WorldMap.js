@@ -142,7 +142,7 @@ export default class WorldMap extends Component {
 					div.style("opacity", .9)
 						.style('z-index',10)
 
-					div.html(this.props.year + " " + d.properties['name'] + "<br>"  + this.props.trade + " Value:" + this.convert(d.properties[year + '_' + trade]))	
+					div.html(this.props.year + " " + d.properties['name'] + "<br>"  + this.props.trade + " Value:" + this.convert(d.properties[this.props.year + '_' + this.props.trade]))	
 				})
 				.on("mousemove", function () {
 					div.style("left", (d3.event.pageX + 10) + "px")
