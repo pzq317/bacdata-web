@@ -24,7 +24,7 @@ class App extends Component {
         this.state={
             year:2016,
             trade:'Export',
-            Country:''
+            Country:'United-States'
         }
         this.yearStatus = this.yearStatus.bind(this);
         this.tradeStatus = this.tradeStatus.bind(this);

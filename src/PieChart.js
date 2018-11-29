@@ -126,6 +126,15 @@ export default class Pie extends Component {
             .attr('id', 'pieCN-svg')
             .attr('transform', 'translate(' + (width) / 2 + ',' + (height) / 2 + ')')
 
+        d3.select('#pieUS-svg-svg').append('text')
+            .attr('x', width/2)
+            .attr('y', height -10)
+            .attr('id','ins')
+            .text('Please Select a Country')
+            .attr('font-size','15')
+            .attr("text-anchor", "middle")
+            
+
         /*var arc1 = svg1.selectAll('.arc')
             //.data(pie(dataUS))
             .enter()
@@ -235,7 +244,7 @@ export default class Pie extends Component {
 
         // var width = 250 - margin.left - margin.right;
         // var height = 250 - margin.top - margin.bottom;
-
+        d3.select('#ins').remove()
         var div = d3.select(".tooltip")
 
 

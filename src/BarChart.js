@@ -110,6 +110,14 @@ export default class Bar extends Component {
             .attr("transform", "translate(0," + height + ")")
             .attr("class", "xAxis")
 
+        svg.append('text')
+            .attr('x', width/2)
+            .attr('y', height/2)
+            .attr('id','ins')
+            .text('Please Select a Country')
+            .attr('font-size','25')
+            .attr("text-anchor", "middle")
+
         /*var max = d3.max(data,function(d){return d['2017_RuralPopulation']})
 
         var yAxisScale = d3.scaleLinear()
@@ -137,7 +145,7 @@ export default class Bar extends Component {
         console.log(width,height)
             //width = +d3.select('#bar').style('width').slice(0, -2) - margin.left - margin.right,
             //height = +d3.select('#bar').style('height').slice(0, -2) - margin.top - margin.bottom;
-
+        d3.select('#ins').remove()
 
         var colorExport = d3.scaleOrdinal().domain(['United-States','China']).range(["#2166CC","#CC5343"]);
 
@@ -145,7 +153,7 @@ export default class Bar extends Component {
         var dataCN = this.state.category.filter(d => d.Reporter == this.props.country && d.Product != 'AllProducts' && d.Partner == "China")
     
         var cateData = []
-
+        var div = d3.select('.tooltip')
         
         for(var i=0; i<Math.max(dataUS.length, dataCN.length); i++){
             var t = {}
@@ -230,15 +238,47 @@ export default class Bar extends Component {
             .attr('width', function(d ,i){ return xAxisScale.bandwidth() })
             .attr('fill', function(d){ return colorExport(d.Country)})
 
-        bar_g//.attr('transform',function(d){return 'translate(' +xAxisScale(d['Product'])+ ',' +(yAxisScale(d['total']))+ ')'})
-            .selectAll('#cate-rect')
+        var tt = bar_g.selectAll('#cate-rect')
             .data(function(d){ 
                 //console.log('here rect',d)
                 return d['data']},function(d){ return d['Country']})
             .enter()
             .append('rect')
             .attr('id','cate-rect')
-            .attr('x',function(d){return xAxisScale(d['Product'])})
+            .on("mouseover", function(d){
+                div.style("opacity", .9)
+                    .style('z-index',10)
+                div.html(d.Product + '<br>'+'Value: ' + convert(d.Value))
+
+                function convert(labelValue) {
+                    // Nine Zeroes for Billions
+                    return Math.abs(Number(labelValue)) >= 1.0e+9
+
+                    ? Math.round((Math.abs(Number(labelValue)) / 1.0e+9)*10)/10 + "B"
+                    // Six Zeroes for Millions 
+                    : Math.abs(Number(labelValue)) >= 1.0e+6
+
+                    ? Math.round((Math.abs(Number(labelValue)) / 1.0e+6)*10)/10 + "M"
+                    // Three Zeroes for Thousands
+                    : Math.abs(Number(labelValue)) >= 1.0e+3
+
+                    ? Math.round((Math.abs(Number(labelValue)) / 1.0e+3)*10)/10 + "K"
+
+                    : Math.abs(Number(labelValue));
+
+                }
+            })
+            .on("mousemove", ()=>{
+                div.style("left", (d3.event.pageX + 10) + "px")
+                    .style("top", (d3.event.pageY - 10) + "px")
+            })              
+            .on("mouseleave",function(d){
+                div.style("opacity", 0)
+                    .style('z-index',-10)
+                
+            })
+
+        tt.attr('x',function(d){return xAxisScale(d['Product'])})
             .attr('y', (d, i )=>{
                 var temp = cateData.filter(l=>l['Product']==d['Product'])
                 return i ? yAxisScale(temp[0]['total'])+(height-yAxisScale(temp[0]['data'][0]['Value'])+1) : yAxisScale(temp[0]['total'])+0
@@ -270,7 +310,6 @@ export default class Bar extends Component {
             .append('g')
             .attr('id','bar-g')
             //.attr('transform',function(d){return 'translate(' +xAxisScale(d['Product'])+ ',' +(yAxisScale(d['total']))+ ')'})
-        var div = d3.select('.tooltip')
 
         var t = bar_gg.selectAll('#cate-rect')
             .data(function(d){ return d['data']},function(d){ return d['Country']})
