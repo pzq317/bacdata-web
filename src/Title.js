@@ -19,7 +19,7 @@ export default class Title extends Component {
             </div>*/
 
             <div className="container-fluid" id='title'>
-                <h1>Not just a trade war between China and the U.S.</h1>
+                <h1>Beyond the China–U.S. Trade War</h1>
                 <br></br>
                 <p>In 2018, the president of the United States has placed tariffs on billions of dollars’ worth of goods from around the world, in particular, China, the second-largest economy in the world. Mr. Trump wanted to cut the trade deficit with China - a country he had accused of unfair trade practices since before he became president. Up until September 2018, U.S. slapped tariffs on $200 billion of Chinese imports. Those tariffs will increase to 25% from 10% at the start of next year unless the two countries agree on a deal. China has retaliated by placing tariffs on US agricultural and industrial products, from soybeans, pork and cotton to aeroplanes, cars and steel pipes (BBC).</p>
                 <p>The US-China trade war clearly would have broader, lasting effects on the world. It would hurt consumers around the world by making it harder for all companies to operate, forcing them to push higher prices onto their customers. “When you have the world’s two largest economies at odds, that’s a situation where everyone suffers,” Maurice Obstfeld, the International Monetary Fund (IMF) chief economist commented during an interview of a report that projected the global economy. He added that global growth could further drop “close to a percentage point” if the trade war continues.</p>
