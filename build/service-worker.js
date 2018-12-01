@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/bacdata-web/precache-manifest.97ce1686456177e47e326359a47ccb77.js"
+  "/bacdata-web/precache-manifest.41415ec1917bcc09f4e012f1e7af319e.js"
 );
 
 workbox.clientsClaim();

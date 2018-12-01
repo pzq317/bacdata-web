@@ -26,9 +26,9 @@ export default class Title extends Component {
                 <p>This project aims to visualize trading value around the world, with a focus on China, U.S., and the trading relationships between other countries with China and U.S. Navigation bar is on the left, please feel free to scroll down this web page to learn more, or click the video link and the report link for a more comprehensive demonstration of this visulizations.</p>
                 <br></br>
                 <br></br>
-                <a href="">Video link</a>
+                <a href="https://www.youtube.com/watch?v=rtC8PZJBFuk">Video link</a>
                 <br></br>
-                <a href="">Report link</a>
+                <a href="http://www-scf.usc.edu/~jjow/Beyond_the_China_U_S__Trade_War.pdf">Report link</a>
                 <br></br>
                 <br></br>
                 <a href="https://www.vox.com/2018/10/9/17955106/imf-economy-trump-trade-war-growth">Reference</a>
